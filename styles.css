@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .clock {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo input[type="text"],
+  .todo input[type="time"],
+  .todo button {
+    margin: 5px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .todo button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .todo button:hover {
+    background-color: #45a049;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li span {
+    flex: 1;
+    font-size: 18px;
+  }
+  
+  li button {
+    background-color: #ff5a5a;
+    margin: 0.1rem 1rem;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  li button:hover {
+    background-color: #e25454;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 600px) {
+    .clock {
+      font-size: 36px;
+    }
+  
+    .todo input[type="text"],
+    .todo input[type="time"],
+    .todo button {
+      padding: 10px;
+    }
+  
+    li {
+      flex-direction: column;
+    }
+  }
+  
